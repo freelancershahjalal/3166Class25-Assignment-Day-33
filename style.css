@@ -1,0 +1,244 @@
+/* Default CSS Link Start */
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'League Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.default-btn{
+    margin-left: 100px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #fff;    
+    color: #1919cd;
+    border: #1919cd;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.default-btn:hover{
+    color: #fff;
+}
+.default-btn::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #1919cd;     
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 0.5s ease;   
+}
+.default-btn:hover::after{
+    width: 100%;    
+}
+/* Default CSS Link End */
+
+
+/* Pricing Table Section Styling Start */
+.pricing-table{
+    background: #f6f9fc;
+}
+.pricing-title {
+    width: 400px;
+    margin: auto;
+}
+.pricing-title h5{
+    color: #1919cd;
+    text-transform: uppercase;
+}
+.pricing-title h2{
+    font-weight: 600;
+    position: relative;
+}
+.pricing-title h2::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background: #1919cd;
+    bottom: -10px;
+    left: 153px;
+}
+.pricing-title p {
+    padding: 30px 0px;
+}
+.pricing-table-items {
+    padding: 30px 100px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+/* .pricing-table-items:hover{
+    background: #0d6efd;
+    color: #fff;
+} */
+.pricing-table-items h5 {
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.pricing-table-items h3 {
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 60px;
+    margin: 30px;
+    border-bottom: 2px solid #ddd;
+    transition: all 0.5s ease;
+}
+.pricing-table-items ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.pricing-table-items ul li{}
+.pricing-table-items .pricing-item-button{}
+.pricing-table-items .pricing-item-button a{
+    display: inline-block;
+    background: #0d6efd;    
+    color: #fff;
+    border-radius: 30px;
+    border: none;    
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.pricing-table-items .pricing-item-button a:hover{
+    color: #0d6efd;
+    
+}
+.pricing-table-items .pricing-item-button a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #fff;    
+    border-radius: 30px;    
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.pricing-table-items .pricing-item-button a:hover::after{
+    width: 100%;    
+}
+.pricing-table-items:hover{
+    background: #0d6efd;
+    color: #fff;
+}
+.pricing-table-items:hover .pricing-item-button a{
+    background: #fff;
+    color: #0d6efd ;
+}
+.pricing-table-items:hover .pricing-item-button a::after{
+    background: #0d6efd;
+}
+.pricing-table-items .pricing-item-button a:hover{
+    color: #fff;
+}
+
+/* Pricing Table Section Styling End */
+
+
+/* Purchase Section Styling Start */
+.purchase{
+    width: 100%;
+    background-image: linear-gradient(rgba(13,110,253, 0.8), rgba(13,110,253, 0.8)), url(img/free-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0px; 
+    text-align: center; 
+    color: #fff;
+}
+.purchase-content{
+    width: 500px;
+    margin: auto;
+}
+.purchase-content h6{
+    text-transform: uppercase;
+}
+.purchase-content h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0px;
+    position: relative;
+}
+.purchase-content h2::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    top: 115px;
+    left: 220px;
+}
+.purchase-content p{
+    padding: 10px;
+}
+.purchase-content .purchase-content-button a {
+    display: inline-block;
+    background: #fff;
+    color: #0d6efd;
+    border-radius: 30px;
+    font-weight: 600;    
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+.purchase-content .purchase-content-button a:hover{
+    color: #fff;
+}
+.purchase-content .purchase-content-button a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #0d6efd;    
+    color: #fff;
+    border-radius: 30px;    
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.purchase-content .purchase-content-button a:hover::after{
+    width: 100%;
+}
+/* News Letter Section Styling Start */
+.newsletter-content{
+    color: #fff;
+    background: #3763eb;
+}
+.newsletter-content h3{}
+.newsletter-content p{}
+.newsletter-content form{}
+.newsletter-content input {
+    width: 350px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+.card-title {
+    font-size: 30px;   
+    padding-bottom: 50px;
+}
+.newsletterbtn {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 40px;
+    margin-left: 25px;
+    color: #fff;
+}
+.newsletterbtn:hover{
+    background: #3763eb;
+    border: 1px solid #fff;
+}
+.newsletterbtn-2 {
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.newsletter-content btn{}
+/* News Letter Section Styling End */
