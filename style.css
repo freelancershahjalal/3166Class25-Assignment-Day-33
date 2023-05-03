@@ -36,6 +36,258 @@ img{
 }
 /* Default CSS Link End */
 
+/* Menu Section Styling Start */
+.mani-menu{
+    background: #e7e6e6;    
+}
+.nav-item{
+    position: relative;
+    margin-left: 10px;   
+}
+.nav-item a.active{
+    color: #1919cd !important;
+}
+.nav-item a:hover{
+    color: #1919cd !important;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1919cd;
+    top: 145%;
+    left: 0;
+    transition: all 0.5s ease;    
+}
+.nav-item:hover::after{
+    width: 100%;    
+}
+.nav-item.active1::after{
+    width: 100%;
+}
+
+/* Dropdown Menu Styling Start */
+.nav-item{
+    position: relative;
+}
+.nav-item ul{
+    position: absolute;
+    width: 200px;
+    background: #fff;
+    top: 150%;
+    left: 0;
+    padding: 15px 20px;    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.nav-item:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-item ul li {	
+    list-style: none;
+}
+.nav-item ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #1919cd;    
+    padding: 10px 20px;
+}
+.nav-item ul li a:hover{
+    color: #fff !important;
+}
+/* Dropdown Menu Styling End */
+/* Menu Section Styling End */
+
+/* Hero/Banner Section Styling Start */
+.hero{
+    background: #edf6ff;
+}
+.hero .hero-content{
+    padding: 100px 0px;   
+}
+.hero .hero-content h2 {
+	font-size: 50px;
+}
+.hero .hero-content p{
+	padding: 30px 0px;
+	line-height: 30px;
+	text-align: justify;
+}
+.hero .hero-content a.default-btn{
+    margin-left: 0;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #0d6efd;    
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.hero .hero-content a.default-btn:hover{
+    color: #0d6efd;
+    background: #fff;
+    
+}
+.hero .hero-content a.default-btn::after{
+    background: #fff;   
+}
+.hero-img{}
+.hero-img img {
+	border-radius: 400px 0px 500px 500px;
+	margin-left: 154px;
+	height: 517px;
+}
+/* Hero/Banner Section Styling End */
+
+/* Services Section Styling Start */
+.services-content{}
+.services-content h6{
+    color: #9d8fec;
+    text-transform: uppercase;
+}
+.services-content h1{
+    position: relative;
+    font-size: 39px;
+}
+.services-content p{}
+
+.services-content h1::after{
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 3px;
+    background: #9d8fec;
+    left: 0;
+    top: 110%;
+}
+
+.services-img {
+	position: absolute;
+	top: 45px;
+	left: -55px;
+	z-index: -1;
+}
+.services-icon {
+	width: 50px;
+	height: 50px;
+	background: #5252f0;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 30px 30px 30px 0px;
+	margin: 20px 0px;
+	font-size: 26px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.services-icon::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #9d8fec;
+    top: 60px;
+    left: 0;
+}
+.services-icon i{}
+.cardhover{}
+.cardhover:hover{
+    background: #5252f0;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+.cardhover:hover .services-icon{
+    background: #fff;
+    color: #5252f0;
+}
+.cardhover:hover .services-icon::after{
+    background: #fff;
+}
+/* Services Section Styling End */
+
+
+/* Video Section Styling Start */
+.video{
+    background-image: linear-gradient(rgba(15, 15, 79, 0.659), rgba(15, 15, 79, 0.659)), url(img/video-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+.video-content{
+    color: #fff;  
+}
+.video-content h5{
+    text-transform: uppercase;
+}
+.video-content h2{
+    position: relative;
+}
+.video-content h2::after {
+	content: '';
+	position: absolute;
+	width: 15%;
+	height: 2px;
+	background: #fff;
+	top: 50px;
+	left: 260px;
+}
+.video-content p{
+    line-height: 30px;
+}
+.video-content .vicons{
+    margin: 40px 0px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	line-height: 80px;
+	border-radius: 50%;
+    position: relative;
+}
+.video-content .vicons i{
+    color: #5252f0;
+}
+.video-content .vicons::before{
+content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    animation: playbtn 1.6s ease-out infinite;
+}
+.video-content .vicons::after{
+content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%, 30%{
+        transform: scale(0);
+        opacity: 1;
+    }   
+    50%{
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+/* Video Section Styling End */
 
 /* Pricing Table Section Styling Start */
 .pricing-table{
@@ -69,6 +321,7 @@ img{
     padding: 30px 100px;
     background: #fff;
     transition: all 0.3s ease;
+    position: relative;
 }
 /* .pricing-table-items:hover{
     background: #0d6efd;
@@ -81,11 +334,28 @@ img{
 .pricing-table-items h3 {
     font-size: 50px;
     font-weight: 600;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     margin: 30px;
-    border-bottom: 2px solid #ddd;
-    transition: all 0.5s ease;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    transition: all 0.5s ease 0s;
+    position: relative;
 }
+.pricing-table-items h6 {
+    position: absolute;
+    top: 160px;
+    left: 165px;
+    font-size: 18px;
+    font-weight: 600;    
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.pricing-table-items:hover h6{
+    opacity: 1;
+    visibility: visible;
+
+}
+
 .pricing-table-items ul {
     margin-left: 0;
     padding-left: 0;
